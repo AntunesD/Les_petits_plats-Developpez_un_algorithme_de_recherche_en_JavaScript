@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<body>
+    <header>
+        <a href="#" class="home-link">
+            <img src="./Asset/Logo.png" alt="fond d'ecran"/>
+        </a>
+        <h1>CHERCHEZ PARMI PLUS DE 1500 RECETTES DU QUOTIDIEN, SIMPLES ET DÉLICIEUSES</h1>
+        <form action="#" class="principal-search-form">
+            <input type="text" placeholder="Rechercher une recette, un ingrédient, ..." class="principal-search-input">
+            <button type="submit" class="principal-search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+    </header>
+    <section class="recette">
+        <div>
+
+            <div class="header-filtres">
+                <div class="selects">
+
+                    <div class="select-nav">
+                        <label for="touch-ingredients"><span class="select-title">Ingrédients<i
+                                    class="fa-solid fa-chevron-down"></i></span></label>
+                        <input type="checkbox" id="touch-ingredients" class="touch">
+
+                        <ul id="ingredients-select" class="slide">
+                            <li class="input-filtres"><input type="text" id="input-ingredients" oninput="filterItems('ingredients-select', this.value)"><button type="submit"
+                                    class="filtres-search-button">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="select-nav">
+                        <label for="touch-appareils"><span class="select-title">Appareils<i
+                                    class="fa-solid fa-chevron-down"></i></span></label>
+                        <input type="checkbox" id="touch-appareils" class="touch">
+
+                        <ul id="appareils-select" class="slide">
+                            <li class="input-filtres"><input type="text" id="input-appareils" oninput="filterItems('appareils-select', this.value)"><button type="submit"
+                                    class="filtres-search-button">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button></li>
+                        </ul>
+                    </div>
+
+                    <div class="select-nav">
+                        <label for="touch-ustensiles"><span class="select-title">Ustensiles<i
+                                    class="fa-solid fa-chevron-down"></i></span></label>
+                        <input type="checkbox" id="touch-ustensiles" class="touch">
+                        <ul class="slide" id="ustensiles-select">
+                            <li class="input-filtres"><input type="text" id="input-ustensiles"  oninput="filterItems('ustensiles-select', this.value)"><button type="submit"
+                                    class="filtres-search-button">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <span class="nombre-recette">1500 recettes</span>
+            </div>
+            <ul id="contenuFiltres"></ul>
+        </div>
+        <section id="list-recette-card">
+
+            </div>
+        </section>
+    </section>
+    <script src="./script/index.js"></script>
+    <script src="./script/select.js"></script>
+    <script src="./script/recetteCard.js" ></script>
+    <script src="./script/selectStyle.js" ></script>
+    <script src="./script/tag.js"></script>
+</body>
+
+</html>

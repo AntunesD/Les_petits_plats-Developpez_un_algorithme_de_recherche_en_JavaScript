@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url("./select.css");
+@import url("./recetteCard.css");
+
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    list-style: none;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+    padding: 20px;
+    background-image: url(../Asset/BgImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-link img {
+    width: 207px;
+    position: absolute;
+    left: 69px;
+    top: 51px;
+}
+
+h1 {
+    max-width: 900px;
+    font-family: 'Anton', sans-serif;
+    color: #FFD15B;
+    margin-top: 20px;
+    font-size: 44px;
+    font-weight: 100;
+}
+
+.principal-search-form {
+    position: relative;
+    width: 900px;
+}
+
+.principal-search-input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 11px;
+}
+
+.principal-search-input:focus-visible {
+    outline: none;
+}
+
+.principal-search-button {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 25px;
+    font-weight: 100;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+
+.recette {
+    padding: 21px 102px;
+}
+
+.header-filtres {
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-deroulant {
+
+    text-align: center;
+}
+
+.nombre-recette {
+    font-family: 'Anton', sans-serif;
+    font-size: 21px;
+
+}
+
+.recette {
+    background-color: #E5E5E5;
+}
+
