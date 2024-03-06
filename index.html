@@ -12,7 +12,7 @@
 <body>
     <header>
         <a href="#" class="home-link">
-            <img src="./Asset/Logo.png" alt="fond d'ecran"/>
+            <img src="./Asset/Logo.png" alt="fond d'ecran">
         </a>
         <h1>CHERCHEZ PARMI PLUS DE 1500 RECETTES DU QUOTIDIEN, SIMPLES ET DÉLICIEUSES</h1>
         <form action="#" class="principal-search-form">
@@ -22,7 +22,7 @@
             </button>
         </form>
     </header>
-    <section class="recette">
+    <div class="recette">
         <div>
 
             <div class="header-filtres">
@@ -34,7 +34,8 @@
                         <input type="checkbox" id="touch-ingredients" class="touch">
 
                         <ul id="ingredients-select" class="slide">
-                            <li class="input-filtres"><input type="text" id="input-ingredients" oninput="filterItems('ingredients-select', this.value)"><button type="submit"
+                            <li class="input-filtres"><input type="text" id="input-ingredients"
+                                    oninput="filterItems('ingredients-select', this.value)"><button type="submit"
                                     class="filtres-search-button">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button></li>
@@ -48,7 +49,8 @@
                         <input type="checkbox" id="touch-appareils" class="touch">
 
                         <ul id="appareils-select" class="slide">
-                            <li class="input-filtres"><input type="text" id="input-appareils" oninput="filterItems('appareils-select', this.value)"><button type="submit"
+                            <li class="input-filtres"><input type="text" id="input-appareils"
+                                    oninput="filterItems('appareils-select', this.value)"><button type="submit"
                                     class="filtres-search-button">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button></li>
@@ -60,7 +62,8 @@
                                     class="fa-solid fa-chevron-down"></i></span></label>
                         <input type="checkbox" id="touch-ustensiles" class="touch">
                         <ul class="slide" id="ustensiles-select">
-                            <li class="input-filtres"><input type="text" id="input-ustensiles"  oninput="filterItems('ustensiles-select', this.value)"><button type="submit"
+                            <li class="input-filtres"><input type="text" id="input-ustensiles"
+                                    oninput="filterItems('ustensiles-select', this.value)"><button type="submit"
                                     class="filtres-search-button">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button></li>
@@ -72,15 +75,14 @@
             </div>
             <ul id="contenuFiltres"></ul>
         </div>
-        <section id="list-recette-card">
+        <div id="list-recette-card">
 
-            </div>
-        </section>
-    </section>
+        </div>
+    </div>
     <script src="./script/index.js"></script>
     <script src="./script/select.js"></script>
-    <script src="./script/recetteCard.js" ></script>
-    <script src="./script/selectStyle.js" ></script>
+    <script src="./script/recetteCard.js"></script>
+    <script src="./script/selectStyle.js"></script>
     <script src="./script/tag.js"></script>
 </body>
 
